@@ -34,13 +34,11 @@ body::before {
 
 a {
   color: rgb(223, 189, 0);
-  /*color: #18d26e;*/
   text-decoration: none;
 }
 
 a:hover {
   color: rgb(223, 189, 0);
-  /*color: #35e888;*/
   text-decoration: none;
 }
 
@@ -84,7 +82,6 @@ h1, h2, h3, h4, h5, h6 {
 #header h2 span {
   color: #fff;
   border-bottom: 2px solid rgb(223, 189, 0);
-  /*border-bottom: 2px solid #18d26e;*/
   padding-bottom: 6px;
 }
 #header img {
@@ -109,7 +106,6 @@ h1, h2, h3, h4, h5, h6 {
   height: 40px;
 }
 #header .social-links a:hover {
-  /*background: #18d26e;*/
   background: rgb(223, 189, 0);
 }
 @media (max-width: 992px) {
@@ -210,7 +206,6 @@ h1, h2, h3, h4, h5, h6 {
   bottom: -4px;
   left: 0;
   background-color: rgb(223, 189, 0);
-  /*background-color: #18d26e;*/
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -336,7 +331,6 @@ section .container {
   height: 1px;
   display: inline-block;
   background: rgb(223, 189, 0);
-  /*background: #4ceb95;*/
   margin: 4px 10px;
 }
 .section-title p {
@@ -356,7 +350,6 @@ section .container {
   font-weight: 700;
   font-size: 26px;
   color: rgb(223, 189, 0);
-  /*color: #18d26e;*/
 }
 .over-mij .content ul {
   list-style: none;
@@ -374,7 +367,6 @@ section .container {
   font-size: 16px;
   margin-right: 5px;
   color: rgb(223, 189, 0);
-  /*color: #18d26e;*/
   line-height: 0;
 }
 .over-mij .content p:last-child {
@@ -403,7 +395,6 @@ section .container {
   background: rgba(255, 255, 255, 0.1);
   padding: 12px;
   color: rgb(223, 189, 0);
-  /*color: #18d26e;*/
   border-radius: 50px;
   line-height: 0;
 }
@@ -450,7 +441,6 @@ section .container {
   height: 10px;
   transition: 0.9s;
   background-color: rgb(223, 189, 0);
-  /*background-color: #18d26e;*/
 }
 
 /*--------------------------------------------------------------
@@ -503,7 +493,6 @@ section .container {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   background: rgb(223, 189, 0);
-  /*color: #18d26e;*/
   margin-bottom: 10px;
 }
 .dagverslagen .dagverslagen-item h5 {
@@ -532,8 +521,6 @@ section .container {
   left: -9px;
   top: 0;
   background: rgb(223, 189, 0);
-  /*background: #18d26e;
-  border: 2px solid #18d26e;*/
   border: 2px solid rgb(223,189,0);
 }
 
@@ -551,7 +538,6 @@ section .container {
   width: 64px;
   height: 64px;
   background: rgb(223, 189, 0);
-  /*background: #18d26e;*/
   border-radius: 5px;
   transition: all 0.3s ease-out 0s;
   display: flex;
@@ -592,19 +578,15 @@ section .container {
 .taken .icon-box:hover {
   background: rgb(223, 189, 0);
   border-color: rgb(223, 189, 0);
-  /*background: #18d26e;
-  border-color: #18d26e;*/
 }
 .taken .icon-box:hover .icon {
   background: #fff;
 }
 .taken .icon-box:hover .icon i {
   color: rgb(223, 189, 0);
-  /*color: #18d26e;*/
 }
 .taken .icon-box:hover .icon::before {
   background: rgb(223, 189, 0);
-  /*background: #35e888;*/
 }
 .taken .icon-box:hover h4 a, .taken .icon-box:hover p {
   color: #fff;
@@ -639,7 +621,7 @@ section .container {
   border-radius: 4px;
 }
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  background: #18d26e;
+  background: rgb(223, 189, 0);
 }
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
@@ -807,5 +789,5 @@ section .container {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #18d26e;
+  background-color: rgb(223, 189, 0);
 }
