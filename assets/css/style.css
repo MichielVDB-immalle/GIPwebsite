@@ -532,6 +532,7 @@ section .container {
   text-align: center;
   background: rgba(204, 204, 204, 0.1);
   padding: 80px 20px;
+  width: 100%;
   transition: all ease-in-out 0.3s;
 }
 .taken .icon-box .icon {
