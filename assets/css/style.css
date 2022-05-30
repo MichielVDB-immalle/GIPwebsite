@@ -471,7 +471,7 @@ section .container {
 }
 
 /*--------------------------------------------------------------
-# Resume
+# Dagverslagen
 --------------------------------------------------------------*/
 .dagverslagen .dagverslagen-title {
   font-size: 26px;
@@ -492,8 +492,8 @@ section .container {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  background: rgb(223, 189, 0);
   margin-bottom: 10px;
+  color: rgb(223, 189, 0);
 }
 .dagverslagen .dagverslagen-item h5 {
   font-size: 16px;
