@@ -373,6 +373,9 @@ section .container {
 .over-mij .content p:last-child {
   margin-bottom: 0;
 }
+#mijnwebsitetje a:link, a:visited{
+  color: #fff;
+}
 
 /*--------------------------------------------------------------
 # Counts
