@@ -188,31 +188,65 @@
   const portfolioLightbox = GLightbox({
     selector: '.galerij-lightbox'
   });
+  
+
 
   /**
-   * Initiate portfolio details lightbox 
+   * script isotope and filter
    */
-  const portfolioDetailsLightbox = GLightbox({
-    selector: '.galerij-details-lightbox',
-    width: '90%',
-    height: '90vh'
+   window.addEventListener('load', () => {
+    let scriptContainer = select('.script-container');
+    if (scriptContainer) {
+      let scriptIsotope = new Isotope(scriptContainer, {
+        itemSelector: '.script-item',
+        layoutMode: 'fitRows'
+      });
+
+      let scriptFilters = select('#scriptV-filter li', true);
+
+      on('click', '#scriptV-filter li', function(e) {
+        e.preventDefault();
+        scriptFilters.forEach(function(el) {
+          el.classList.remove('filter-active');
+        });
+        this.classList.add('filter-active');
+
+        scriptIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+      }, true);
+    }
+
   });
 
+
+
   /**
-   * Portfolio details slider
+   * mail isotope and filter
    */
-  new Swiper('.galerij-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
+   window.addEventListener('load', () => {
+    let mailContainer = select('.mail-container');
+    if (mailContainer) {
+      let mailIsotope = new Isotope(mailContainer, {
+        itemSelector: '.mail-item',
+        layoutMode: 'fitRows'
+      });
+
+      let mailFilters = select('#mailV-filter li', true);
+
+      on('click', '#mailV-filter li', function(e) {
+        e.preventDefault();
+        mailFilters.forEach(function(el) {
+          el.classList.remove('filter-active');
+        });
+        this.classList.add('filter-active');
+
+        mailIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+      }, true);
     }
+
   });
 
 })()
