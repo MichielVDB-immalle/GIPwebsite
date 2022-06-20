@@ -249,4 +249,34 @@
 
   });
 
+
+
+  /**
+   * casestudy isotope and filter
+   */
+   window.addEventListener('load', () => {
+    let caseContainer = select('.case-container');
+    if (caseContainer) {
+      let caseIsotope = new Isotope(caseContainer, {
+        itemSelector: '.case-item',
+        layoutMode: 'fitRows'
+      });
+
+      let caseFilters = select('#caseV-filter li', true);
+
+      on('click', '#caseV-filter li', function(e) {
+        e.preventDefault();
+        caseFilters.forEach(function(el) {
+          el.classList.remove('filter-active');
+        });
+        this.classList.add('filter-active');
+
+        caseIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+      }, true);
+    }
+
+  });
+
 })()
